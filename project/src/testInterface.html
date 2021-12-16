@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+
+<form action='http://192.168.0.13:3380/api/user/Login' method="post">
+    <input type="text" name="username" value="test">
+    <input type="password" name="password" value="123456">
+    <input type="submit" value="登录">
+</form>
+<form action='http://192.168.0.13:3380/api/cart/list' method="post">
+    <input type="submit" value="购物车列表">
+</form>
+<form action='http://192.168.0.13:3380/api/sku/list' method="post">
+    <input type="submit" value="商品列表">
+</form>
+<form action='http://192.168.0.13:3380/api/cart/add' method="post">
+    <input type="text" name="id" >
+    <input type="submit" value="加入购物车">
+</form>
+<form action='http://192.168.0.13:3380/api/user/logout' method="post">
+    <input type="submit" value="退出登录">
+</form>
+<form action='http://192.168.0.13:3380/api/sku/info' method="post">
+    <input type="text" name="id" value="">
+    <input type="submit" value="商品详情">
+</form>
+
+</body>
+</html>
